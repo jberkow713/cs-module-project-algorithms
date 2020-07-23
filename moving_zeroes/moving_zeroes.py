@@ -2,10 +2,30 @@
 Input: a List of integers
 Returns: a List of integers
 '''
+import numpy as np
+
 def moving_zeroes(arr):
+
     # Your code here
 
-    pass
+    nonzeroes = []
+    zeroes = []
+    
+    
+    for i in arr:
+        
+
+        if i !=0:
+            nonzeroes.append(i)
+        elif i == 0:
+            zeroes.append(i) 
+        
+
+    mainlist = np.concatenate((nonzeroes, zeroes), axis=None)            
+
+    return mainlist       
+             
+
 
 
 if __name__ == '__main__':

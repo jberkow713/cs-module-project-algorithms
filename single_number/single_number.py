@@ -4,8 +4,28 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
+    # two nested loops
+    # loop through every element
+    # loop through every element again, compare if two elements match at different parts
+    # of array
+    # count times each element occurs
+    s = set()
 
-    pass
+
+    for x in arr:
+        
+        if x in s:
+            s.remove(x)
+        else:
+            s.add(x)
+               
+    return list(s)[0]
+
+# adds elements to set, if in set, removes from set, in end, 
+# returns single element which should be at head of list
+
+
+    
 
 
 if __name__ == '__main__':
